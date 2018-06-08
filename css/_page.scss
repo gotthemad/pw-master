@@ -1,0 +1,18 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+    
+    @media (min-width: 1086px) and (max-width: 1366px) {
+        font-size: 52.5%;
+    }
+    
+    @media (min-width: 1367px) {
+        font-size: 62.5%;
+    }
+}
+body {
+    margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
