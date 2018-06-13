@@ -1,0 +1,34 @@
+.main-content__inner {
+//    background-color: #000;
+}
+@mixin main-content__inner {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-content__inner {
+    @include main-content__inner;
+}
+.main-content__inner--welcome {
+    @include main-content__inner;
+    height: 100vh;    
+}
+.main-content__inner--welcome::after {
+    background: url(../img/highway.jpg);
+    background-size: cover;
+    content: "";
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.main-content__inner--second {
+    background-color: darkorange;
+    height: 50vh;
+    width: 100%;
+}

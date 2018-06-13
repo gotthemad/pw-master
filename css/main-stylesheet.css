@@ -1,0 +1,150 @@
+.m1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.t3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 5.0rem; }
+
+html {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (max-width: 1366px) {
+    html {
+      font-size: 52.5%; } }
+  @media (min-width: 1367px) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  margin: 0;
+  background-color: #000; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+.heading {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 10.0rem;
+  background-color: #fff; }
+
+.top-stripe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0 2.5rem; }
+  @media (max-width: 1366px) {
+    .top-stripe {
+      width: 100%; } }
+  @media (min-width: 1367px) {
+    .top-stripe {
+      width: 1400px; } }
+
+.top-stripe__logo {
+  width: 18.0rem;
+  height: 3.0rem; }
+
+.logo__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../img/logo--red.svg); }
+
+@media (min-width: 901px) {
+  .navigation__button {
+    display: none; } }
+
+.navigation__link {
+  display: inline-block;
+  margin-left: 6.2rem;
+  padding: 1.2rem 0 1.2rem 0; }
+
+.navigation__link::after {
+  content: "";
+  position: relative;
+  top: 1.2rem;
+  display: block;
+  width: 0;
+  height: 0.3rem;
+  background-color: #000;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s; }
+
+.navigation__link:hover::after {
+  width: 100%; }
+
+.main-content__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-content__inner--welcome {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh; }
+
+.main-content__inner--welcome::after {
+  background: url(../img/highway.jpg);
+  background-size: cover;
+  content: "";
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.main-content__inner--second {
+  background-color: darkorange;
+  height: 50vh;
+  width: 100%; }
+
+/*# sourceMappingURL=main-stylesheet.css.map */

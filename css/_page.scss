@@ -2,16 +2,17 @@ html {
     margin: 0;
     box-sizing: border-box;
     
-    @media (min-width: 1086px) and (max-width: 1366px) {
+    @media (max-width: $breakpoint_1 + 0px) {
         font-size: 52.5%;
     }
     
-    @media (min-width: 1367px) {
+    @media (min-width: $breakpoint_1 + 1px) {
         font-size: 62.5%;
     }
 }
 body {
     margin: 0;
+    background-color: #000;
 }
 *, *:before, *:after {
   box-sizing: inherit;
