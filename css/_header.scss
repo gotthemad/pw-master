@@ -10,7 +10,7 @@
 .top-stripe {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
     padding: 0 2.5rem;
@@ -25,7 +25,9 @@
 .top-stripe__logo {
     width: 18.0rem;
     height: 3.0rem;
-    
+}
+.top-stripe__text {
+    margin: 0 0 0 20px;
 }
 .logo__link {
     width: 100%;
@@ -33,6 +35,9 @@
     display: block;
     background-repeat: no-repeat;
     background-image: url(../img/logo--red.svg);
+}
+.top-stripe__navigation {
+    margin-left: auto;
 }
 .navigation__button {
     @media (max-width: $breakpoint_2 + 0px) {
@@ -57,11 +62,11 @@
 .navigation__link::after {
     content: "";
     position: relative;
-    top: 1.2rem;
+    top: 0.5rem;
     display: block;
     width: 0;
-    height: 0.3rem;
-    background-color: #000;
+    height: 0.2rem;
+    background-color: #c1272d;
     transition: width 0.3s;
 }
 .navigation__link:hover::after {
