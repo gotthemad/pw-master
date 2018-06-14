@@ -18,18 +18,31 @@
     left: 50%;
     transform-origin: top left;
 }
-.l-section__wrapper {
-    height: 100vh;
+@mixin l-section__wrapper {
     display: flex;
     flex-flow: column nowrap;
 }
-.l-article__wrapper {
+.l-section__wrapper {
+    @include l-section__wrapper;
+}
+.l-section__wrapper--first-page {
+    @include l-section__wrapper;
+    height: 100vh;
+}
+@mixin l-article__wrapper {
     width: 100%;
     background-color: $orange;
-    padding-top: $top-stripeHeight;
     padding-bottom: 2.0rem;
-//    padding-right: 2.5rem;
-//    padding-left: 2.5rem;
+}
+.l-article__wrapper {
+    @include l-article__wrapper;
+}
+.l-article__wrapper.l-fp-padding {
+    padding-top: $top-stripeHeight;
+    padding-bottom: 3.5rem;
+}
+.l-article__wrapper.l-regular-padding {
+    padding: 7.5rem 0 7.5rem 0;
 }
 .l-article {
     margin: 0 auto;
@@ -49,7 +62,20 @@
     background-image: url(../img/highway.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+//    background-attachment: fixed;
+}
+.figures {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    @media (max-width: $breakpoint_2 + 0px) {
+        flex-flow: column nowrap;
+    }
+}
+.figures__element {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
     
 //.art {
