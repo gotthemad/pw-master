@@ -2,10 +2,10 @@ $top-stripeHeight: 10.0rem;
 .l-top-stripe {
     position: fixed;
     display: flex;
-    
+    z-index: 2;
     top: 0;
     width: 100%;
-    height: $top-stripeHeight;
+//    height: $top-stripeHeight;
     background-color: #fff;
 }
 .top-stripe {
@@ -50,9 +50,9 @@ $top-stripeHeight: 10.0rem;
     background-image: url(../img/logo--red.svg);
 }
 .top-stripe__navigation {
-    @media (max-width: $breakpoint_2 + 0px) {
-        padding: 2.0rem;
-    }
+//    @media (max-width: $breakpoint_2 + 0px) {
+//        padding: 2.0rem;
+//    }
     @media (min-width: $breakpoint_2 + 1px) {
         margin-left: auto;
     }
@@ -66,7 +66,6 @@ $top-stripeHeight: 10.0rem;
         height: 3.5rem;
         background: transparent;
         border: none;
-        background-image: url(../img/hamburger_menu.svg);
         background-repeat: no-repeat;
         background-position: center;
 
@@ -84,6 +83,7 @@ $top-stripeHeight: 10.0rem;
         display: none;
         margin-left: 0;
         text-align: center;
+        padding: 2.2rem 0 2.2rem 0;
     }
 
 }

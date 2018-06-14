@@ -6,10 +6,13 @@ let jsNoJsCollect = document.getElementsByClassName('no-js'),
 
     navBtnCollect = document.getElementsByClassName('jsNavBtn'),
     navBtn = navBtnCollect[0],
-    navLinkCollect = document.getElementsByClassName('jsNavLink'),
+//    navLinkCollect = document.getElementsByClassName('jsNavLink'),
     
     headingCollect = document.getElementsByClassName('jsHeading'),
     heading = headingCollect[0],
+    
+    fadeToBlackCollect = document.getElementsByClassName('jsFadeToBlack'),
+    fadeToBlack = fadeToBlackCollect[0],
     
     isClicked = false;
     
@@ -28,24 +31,14 @@ function navOnClick(){
     navBtn.addEventListener('click', function(){
         if(isClicked === false) {
             
-            console.log('on');
-            
             heading.classList.add('jsHeading--active');
-            
-            for(let i = 0; i < navLinkCollect.length; i++){
-                navLinkCollect[i].classList.add('jsNavLink--active');   
-            }
+            fadeToBlack.classList.add('jsFadeToBlack--active');
             
             isClicked = true;
         } else {
             
-            console.log('off');
-            
             heading.classList.remove('jsHeading--active');
-            
-            for(let i = 0; i < navLinkCollect.length; i++){
-                navLinkCollect[i].classList.remove('jsNavLink--active');  
-            }
+            fadeToBlack.classList.remove('jsFadeToBlack--active');
 
             isClicked = false; 
         } 
