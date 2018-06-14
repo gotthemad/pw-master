@@ -1,5 +1,83 @@
-.main-content__inner {
-//    background-color: #000;
+.more {
+    width: 16.0rem;
+    height: 8.0rem;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: -8.0rem;
+}
+.more__a-more {
+    background-color: $orange;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    width: 15.0rem;
+    height: 15.0rem;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform-origin: top left;
+}
+.l-section__wrapper {
+    height: 100vh;
+}
+.l-article__wrapper {
+    width: 100%;
+    background-color: $orange;
+    padding-top: $top-stripeHeight;
+    padding-bottom: 2.0rem;
+//    padding-right: 2.5rem;
+//    padding-left: 2.5rem;
+}
+.l-article {
+    margin: 0 auto;
+    padding: 0 2.5rem 0 2.5rem;
+    
+    @media (max-width: $breakpoint_1 + 0px) {
+        width: 100%;
+    }
+    @media (min-width: $breakpoint_1 + 1px) {
+        width: 1400px;   
+    }
+}
+.slide-show {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/highway.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    
+//.art {
+//    flex: auto;
+//    padding: 0 2.5rem 0 2.5rem;
+//    
+//    @media (max-width: $breakpoint_1 + 0px) {
+//        width: 100%;
+//    }
+//    @media (min-width: $breakpoint_1 + 1px) {
+//        width: 1400px;
+//    }
+//}
+//.art--cover {
+//    background-color: #ffae00;
+//}
+//.l-art {
+//    padding: 0 2.5rem;
+//    
+//    @media (max-width: $breakpoint_1 + 0px) {
+//        width: 100%;
+//    }
+//    @media (min-width: $breakpoint_1 + 1px) {
+//        width: 1400px;
+//    }
+
+.slider__desc {
+    background-color: #ffae00;
+    width: 100%;
+}
+.main-content {
+//    padding-top: 10.0rem;
 }
 @mixin main-content__inner {
     width: 100%;
@@ -11,13 +89,15 @@
 .main-content__inner {
     @include main-content__inner;
 }
-.main-content__inner--welcome {
+.main-content__inner--100vh {
     @include main-content__inner;
     height: 100vh;    
 }
-.main-content__inner--welcome::after {
+.main-content__inner--100vh::after {
     background: url(../img/highway.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     content: "";
     opacity: 1;
     top: 0;
@@ -28,7 +108,8 @@
     z-index: -1;
 }
 .main-content__inner--second {
-    background-color: darkorange;
+    @include main-content__inner;
+    background-color: #ffae00;
     height: 50vh;
     width: 100%;
 }
