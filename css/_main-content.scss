@@ -31,17 +31,21 @@
 }
 @mixin l-article__wrapper {
     width: 100%;
-    background-color: $orange;
     padding-bottom: 2.0rem;
 }
-.l-article__wrapper {
+.l-article__wrapper--orange {
     @include l-article__wrapper;
+    background-color: $orange;
 }
-.l-article__wrapper.l-fp-padding {
+.l-article__wrapper--white {
+    @include l-article__wrapper;
+    background-color: #fff;
+}
+.l-fp-padding {
     padding-top: $top-stripeHeight;
     padding-bottom: 3.5rem;
 }
-.l-article__wrapper.l-regular-padding {
+.l-regular-padding {
     padding: 7.5rem 0 7.5rem 0;
 }
 .l-article {
@@ -76,6 +80,11 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    flex: 1;
+}
+.element__img {
+    width: 12.0rem;
+    margin-bottom: 4.0rem;
 }
     
 //.art {

@@ -20,9 +20,16 @@
   font-size: 1.8rem;
   margin: 0.8rem 0 0.8rem 0; }
 
+.t2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  margin: 1.2rem 0 1.2rem 0;
+  text-align: center; }
+
 .t3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 5.0rem;
   margin: 2.0rem 0 2.0rem 0; }
 
@@ -200,16 +207,21 @@ body {
           flex-flow: column nowrap;
   height: 100vh; }
 
-.l-article__wrapper {
+.l-article__wrapper--orange {
   width: 100%;
-  background-color: #ffae00;
-  padding-bottom: 2.0rem; }
+  padding-bottom: 2.0rem;
+  background-color: #ffae00; }
 
-.l-article__wrapper.l-fp-padding {
+.l-article__wrapper--white {
+  width: 100%;
+  padding-bottom: 2.0rem;
+  background-color: #fff; }
+
+.l-fp-padding {
   padding-top: 10rem;
   padding-bottom: 3.5rem; }
 
-.l-article__wrapper.l-regular-padding {
+.l-regular-padding {
   padding: 7.5rem 0 7.5rem 0; }
 
 .l-article {
@@ -257,7 +269,14 @@ body {
           flex-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.element__img {
+  width: 12.0rem;
+  margin-bottom: 4.0rem; }
 
 .slider__desc {
   background-color: #ffae00;
