@@ -10,27 +10,37 @@ $top-stripeHeight: 10.0rem;
 }
 .top-stripe {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    padding: 0 2.5rem;
+    padding: 2.6rem 2.5rem 2.6rem 2.5rem;
     
-    @media (max-width: $breakpoint_1 + 0px) {
+    @media (max-width: $breakpoint_2 + 0px) {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+    @media (min-width: $breakpoint_2 + 1px) and (max-width: $breakpoint_1 + 0px) {
+        flex-flow: row nowrap;
         width: 100%;
     }
     @media (min-width: $breakpoint_1 + 1px) {
+        flex-flow: row nowrap;
         width: 1400px;
     }
 }
 .top-stripe__logo {
     width: 18.0rem;
     height: 3.0rem;
+//    margin: 0;
+    margin: 0.9rem 0 0.9rem 0;
 }
 .top-stripe__text {
     margin: 0 0 0 2.0rem;
     padding-left: 1.0rem;
     border-left: 1px solid #000;
+    @media (max-width: $breakpoint_2 + 0px) {
+        display: none;
+    }
 }
 .logo__link {
     width: 100%;
@@ -40,10 +50,18 @@ $top-stripeHeight: 10.0rem;
     background-image: url(../img/logo--red.svg);
 }
 .top-stripe__navigation {
-    margin-left: auto;
+    @media (max-width: $breakpoint_2 + 0px) {
+        padding: 2.0rem;
+    }
+    @media (min-width: $breakpoint_2 + 1px) {
+        margin-left: auto;
+    }
 }
 .navigation__button {
     @media (max-width: $breakpoint_2 + 0px) {
+        position: fixed;
+        top: 2.8rem;
+        right: 2.7rem;
         width: 3.5rem;
         height: 3.5rem;
         background: transparent;
@@ -64,6 +82,8 @@ $top-stripeHeight: 10.0rem;
     transition: color 0.3s;
     @media (max-width: $breakpoint_2 + 0px) {
         display: none;
+        margin-left: 0;
+        text-align: center;
     }
 
 }

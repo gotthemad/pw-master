@@ -33,7 +33,7 @@ function navOnClick(){
             heading.classList.add('jsHeading--active');
             
             for(let i = 0; i < navLinkCollect.length; i++){
-                navLinkCollect[i].classList.add('jsNavLick--active');   
+                navLinkCollect[i].classList.add('jsNavLink--active');   
             }
             
             isClicked = true;
@@ -44,7 +44,7 @@ function navOnClick(){
             heading.classList.remove('jsHeading--active');
             
             for(let i = 0; i < navLinkCollect.length; i++){
-                navLinkCollect[i].classList.remove('jsNavLick--active');  
+                navLinkCollect[i].classList.remove('jsNavLink--active');  
             }
 
             isClicked = false; 

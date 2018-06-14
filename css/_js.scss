@@ -1,3 +1,11 @@
 .js .jsHeading--active {
-    height: 100%;
+    @media (max-width: $breakpoint_2 + 0px){
+        height: 100%;   
+    }
+    
+}
+.js .jsNavLink--active {
+    @media (max-width: $breakpoint_2 + 0px){
+        display: block; 
+    }  
 }
