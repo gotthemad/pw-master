@@ -18,6 +18,11 @@
     left: 50%;
     transform-origin: top left;
 }
+.more__a-more::after {
+    content: "WIĘCEJ";
+    display: inline-block;
+    transform: rotate(-45deg) translate(-20%, 140%);
+}
 @mixin l-section__wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -44,6 +49,19 @@
     @include l-article__wrapper;
     background-color: whitesmoke;
 }
+.l-article__wrapper--clouds {
+    @include l-article__wrapper;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../img/above-atmosphere.jpg);
+    padding: 10.0rem 0;
+}
 .l-fp-padding {
     padding-top: 13rem;
     padding-bottom: 2.5rem;
@@ -68,9 +86,8 @@
     background-attachment: fixed;
 }
 .photo--earth {
-    @include photo;
-    flex: auto;
-    background-image: url(../img/nasa-earth.jpg);     
+
+//    filter: blur(10px);
 }
 .photo--highway {
     @include photo;

@@ -15,11 +15,14 @@
     font-size: 1.8rem;
     font-weight: 400;
 }
-.t1 { //paragraphs
+@mixin t1 { //paragraphs
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     margin: 2.0rem 0 2.0rem 0;
+}
+.t1 {
+    @include t1;
 }
 .t2 { //second headings
     font-family: 'Open Sans', sans-serif;
@@ -31,7 +34,14 @@
 }
 .t3 { //first heading
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 5.0rem;
-    margin: 2.0rem 0 2.0rem 0;
+    margin: 2.0rem 0 4.0rem 0;
+    text-align: center;
+}
+.t3 > span {
+    font-weight: 600;
+}
+.t-center {
+    text-align: center;
 }
