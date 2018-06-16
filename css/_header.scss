@@ -14,6 +14,7 @@ $top-stripeHeight: 10.0rem;
     align-items: center;
     margin: 0 auto;
     padding: 2.6rem 2.5rem 2.6rem 2.5rem;
+    border-bottom: 10px solid rgba(0,0,0,0.1);
     
     @media (max-width: $breakpoint_2 + 0px) {
         flex-flow: column nowrap;

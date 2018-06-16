@@ -33,17 +33,20 @@
     width: 100%;
     padding-bottom: 2.0rem;
 }
+.l-article__wrapper {
+    @include l-article__wrapper;
+}
 .l-article__wrapper--orange {
     @include l-article__wrapper;
     background-color: $orange;
 }
 .l-article__wrapper--white {
     @include l-article__wrapper;
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 .l-fp-padding {
-    padding-top: $top-stripeHeight;
-    padding-bottom: 3.5rem;
+    padding-top: 13rem;
+    padding-bottom: 2.5rem;
 }
 .l-regular-padding {
     padding: 7.5rem 0 7.5rem 0;
@@ -59,14 +62,34 @@
         width: 1400px;   
     }
 }
-.slide-show {
-//    width: 100%;
-//    height: 100%;
-    flex: auto;
-    background-image: url(../img/highway.jpg);
+@mixin photo {
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+}
+.photo--earth {
+    @include photo;
+    flex: auto;
+    background-image: url(../img/nasa-earth.jpg);     
+}
+.photo--highway {
+    @include photo;
+    flex: auto;
+    background-image: url(../img/highway.jpg);  
+}
+//.slide-show {
+////    width: 100%;
+////    height: 100%;
+//    flex: auto;
+//    background-image: url(../img/highway.jpg);
+//    background-position: center;
+//    background-size: cover;
 //    background-attachment: fixed;
+//}
+.photo--glass {
+    @include photo;
+    height: 50vh;
+    background-image: url(../img/bottles.jpg); 
 }
 .figures {
     display: flex;
@@ -83,8 +106,8 @@
     flex: 1;
 }
 .element__img {
-    width: 12.0rem;
-    margin-bottom: 4.0rem;
+    width: 10.0rem;
+    margin-bottom: 2.0rem;
 }
     
 //.art {

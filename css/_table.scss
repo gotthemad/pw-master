@@ -1,0 +1,16 @@
+.table__wrapper > table {
+    width: 100%;
+    
+}
+.table__wrapper > table > tbody > tr:first-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;      
+}
+.table__wrapper > table > tbody > tr {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;  
+}
