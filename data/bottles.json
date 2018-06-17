@@ -1,22 +1,46 @@
 {
     "products": [
           {
-              "Book ID": "1",
-              "Book Name": "Computer Architecture",
-              "Category": "Telephones",
-              "Price": "345440"
+              "Pojemność": "200ml",
+              "Nazwa": "Monopol",
+              "Waga": "145g",
+              "Ilość na palecie": "200",
+              "Cena": "00,00zł"
             },
           {
-              "Book ID": "2",
-              "Book Name": "Asp.Net 4 Blue Book",
-              "Category": "Life",
-              "Price": "23432"
+              "Pojemność": "330ml",
+              "Nazwa": "Mineralna 330",
+              "Waga": "200g",
+              "Ilość na palecie": "200",
+              "Cena": "00,00zł"
             },
           {
-              "Book ID": "3",
-              "Book Name": "Popular Science",
-              "Category": "Science",
-              "Price": "00223"
+              "Pojemność": "500ml",
+              "Nazwa": "Monopol 500",
+              "Waga": "260g",
+              "Ilość na palecie": "260",
+              "Cena": "00,00zł"
+            },
+                  {
+              "Pojemność": "500ml",
+              "Nazwa": "Monopol 500",
+              "Waga": "260g",
+              "Ilość na palecie": "260",
+              "Cena": "00,00zł"
+            },
+                  {
+              "Pojemność": "500ml",
+              "Nazwa": "Monopol 500",
+              "Waga": "260g",
+              "Ilość na palecie": "260",
+              "Cena": "00,00zł"
+            },
+                  {
+              "Pojemność": "500ml",
+              "Nazwa": "Monopol 500",
+              "Waga": "260g",
+              "Ilość na palecie": "260",
+              "Cena": "00,00zł"
             }
         ]
 } 
