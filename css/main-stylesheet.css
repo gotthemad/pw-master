@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .m1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
@@ -29,9 +30,16 @@
 
 .t3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 5.0rem;
-  margin: 2.0rem 0 2.0rem 0; }
+  margin: 2.0rem 0 4.0rem 0;
+  text-align: center; }
+
+.t3 > span {
+  font-weight: 600; }
+
+.t-center {
+  text-align: center; }
 
 html {
   margin: 0;
@@ -189,6 +197,12 @@ body {
   -webkit-transform-origin: top left;
           transform-origin: top left; }
 
+.more__a-more::after {
+  content: "WIĘCEJ";
+  display: inline-block;
+  -webkit-transform: rotate(-45deg) translate(-20%, 140%);
+          transform: rotate(-45deg) translate(-20%, 140%); }
+
 .l-section__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +236,30 @@ body {
   padding-bottom: 2.0rem;
   background-color: whitesmoke; }
 
+.l-article__wrapper--clouds {
+  width: 100%;
+  padding-bottom: 2.0rem;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url(../img/above-atmosphere.jpg);
+  padding: 10.0rem 0; }
+
 .l-fp-padding {
   padding-top: 13rem;
   padding-bottom: 2.5rem; }
@@ -238,15 +276,6 @@ body {
   @media (min-width: 1367px) {
     .l-article {
       width: 1400px; } }
-
-.photo--earth {
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  background-image: url(../img/nasa-earth.jpg); }
 
 .photo--highway {
   background-position: center;
@@ -411,19 +440,28 @@ body {
   margin: 5rem auto; }
 
 .table__wrapper > table {
-  width: 100%; }
-
-.table__wrapper > table > tbody > tr:first-child {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #000;
-  text-transform: uppercase; }
-
-.table__wrapper > table > tbody > tr {
   font-family: 'Raleway', sans-serif;
   font-size: 1.8rem;
-  font-weight: 400; }
+  font-weight: 400;
+  border-collapse: collapse;
+  width: 100%; }
+
+.table__wrapper > table td, .table__wrapper > table th {
+  border: 1px solid #ddd;
+  padding: 8px; }
+
+.table__wrapper > table tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+.table__wrapper > table tr:hover {
+  background-color: #ddd; }
+
+.table__wrapper > table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ffae00;
+  color: white; }
 
 @media (max-width: 900px) {
   .js .jsHeading--active .navigation__link {
